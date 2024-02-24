@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [avatarURL, setAvatarURL] = useState();
   const [githubUserame, setGithubUserame] = useState();
-  const [noOfFollowing, setNoOfFollowing] = useState();
+  const [noOfFollower, setNoOfFollower] = useState();
   const [repoData, setRepoData] = useState();
   const [noOfRepo, setNoOfRepo] = useState();
   const [error, setError] = useState(null);
@@ -54,7 +54,7 @@ function App() {
 
         setAvatarURL(results.avatar_url);
         setGithubUserame(results.login);
-        setNoOfFollowing(results.following);
+        setNoOfFollower(results.followers);
         setNoOfRepo(results.public_repos);
       } catch (error) {
         console.log(error);
@@ -72,7 +72,7 @@ function App() {
         <Card.Body>
           <Card.Title>{githubUserame}</Card.Title>
           <Card.Text>
-            <h6>No Of Following {noOfFollowing}</h6>
+            <h6>No Of Followers {noOfFollower}</h6>
             <h6>No Of Public Repos {noOfRepo}</h6>
           </Card.Text>
           <Button variant="primary" onClick={repoDataURL}>

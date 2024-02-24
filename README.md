@@ -1,7 +1,7 @@
 ### `npm start`
 To Runs the app in the development mode.\
 
-# By default it MY github Username is displaying {AnandAnkur404}
+# By default MY github Username is displaying {AnandAnkur404}
 
 # This app displaying data from Github API
     -Username
