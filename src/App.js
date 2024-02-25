@@ -38,6 +38,9 @@ function App() {
     }
   }
 
+  // Here, getting user details.
+  // one can get their user details by using - "https://api.github.com/users/{Username}" 
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -76,7 +79,7 @@ function App() {
             <h6>No Of Public Repos {noOfRepo}</h6>
           </Card.Text>
           <Button variant="primary" onClick={repoDataURL}>
-            List my public repos
+            List My Repo
           </Button>
         </Card.Body>
       </Card>
